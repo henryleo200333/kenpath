@@ -1,6 +1,6 @@
 baseURL: "https://examplesite.com/"
-title: ExampleSite
-paginate: 5
+title: kenpath
+paginate: 3
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -43,14 +43,14 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "KenPath"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -71,16 +71,16 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "網站製作中 ⛔"
+    Content: 還在研究怎麼擺文章
 
   socialIcons:
     - name: x
-      url: "https://x.com/"
+      url: ""
     - name: stackoverflow
-      url: "https://stackoverflow.com"
+      url: ""
     - name: github
-      url: "https://github.com/"
+      url: ""
 
   analytics:
     google:
@@ -114,15 +114,15 @@ params:
 menu:
   main:
     - identifier: categories
-      name: categories
+      name: tab 1
       url: /categories/
       weight: 10
     - identifier: tags
-      name: tags
+      name: tab 2
       url: /tags/
       weight: 20
     - identifier: example
-      name: example.org
+      name: tab 3
       url: https://example.org
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma

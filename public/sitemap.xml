@@ -11,6 +11,9 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-12-29T14:02:12+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/my-snd-post/</loc>
+    <lastmod>2024-01-04T22:02:05+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
