@@ -64,3 +64,7 @@ servlet簡單講就是一個處理請求的程式，
 2. 設定port與服務對應關係
 3. 設定部署的目標資料夾
 4. 設定全局DB連線資訊
+
+### 四、Log哪裡看
+除錯時常需看server的log，  
+預設在/logs/catalina.out
