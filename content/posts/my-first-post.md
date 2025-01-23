@@ -1,7 +1,7 @@
 +++
 date = '2025-01-23T13:00:00+08:00'
 draft = false
-title = 'Tomcat簡介'
+title = 'Tomcat淺談'
 +++
 
 最近面試被問到會什麼server side的技術，
