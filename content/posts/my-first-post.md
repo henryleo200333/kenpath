@@ -13,11 +13,11 @@ title = 'Tomcat淺談'
 我也還在懵懂摸索中，  
 如果有說錯什麼再請各路大神指點，感謝。  
 
-# 一、處理Http請求
+### 一、處理Http請求
 
 server要能夠處理http請求，必須  
-. 開放某個port作為服務端口接收請求
-. 分配執行序處理請求
+1. 開放某個port作為服務端口接收請求
+2. 分配執行序處理請求
 
 以Java簡易實作如下:
 ```Java
@@ -28,6 +28,7 @@ public static void main(String[] args) throws IOException {
     ServerSocket serverSocket = new ServerSocket(8080);
     while (!serverSocket.isClosed()) {
         Socket request = serverSocket.accept();
+        //執行緒上班
         threadPool.execute(() -> {
             try {
                 InputStream inputStream = request.getInputStream();
@@ -38,8 +39,10 @@ public static void main(String[] args) throws IOException {
                     if(msg.length()==0) {
                         break;
                     }
+                    //印出http請求內容
                     System.out.println(msg);
                 }
+                //TODO 組織回應內容
             } catch (IOException e) {
                 e.printStackTrace();
             }            
@@ -48,7 +51,7 @@ public static void main(String[] args) throws IOException {
 }
 ```
 
-# 二、servlet與jsp容器
+### 二、servlet與jsp容器
 Tomcat能稱為「容器」，其實就是實作了官方規定的功能(Web Profile)，  
 其中包含servlet與jsp的生命週期，  
 簡化開發人員的工作。  
