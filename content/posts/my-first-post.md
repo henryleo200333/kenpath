@@ -51,7 +51,17 @@ public static void main(String[] args) throws IOException {
 }
 ```
 
-### 二、servlet與jsp容器
+### 二、servlet容器
 Tomcat能稱為「容器」，其實就是實作了官方規定的功能(Web Profile)，  
-其中包含servlet與jsp的生命週期，  
-簡化開發人員的工作。  
+其中包含servlet的生命週期，簡化開發人員的工作。  
+servlet簡單講就是一個處理請求的程式，
+透過設定檔定義url與servlet的配對關係。
+
+### 三、主配置文件 server.xml
+這份文件中，可以
+1. 定義域名與應用的對應
+不同域名對到的ip都是這台機器，
+但可以拆分到不同應用服務上。
+2. 設定port與服務對應關係
+3. 設定部署的目標資料夾
+4. 設定全局DB連線資訊
