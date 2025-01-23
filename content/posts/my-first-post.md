@@ -1,9 +1,14 @@
 +++
-date = '2024-12-29T14:02:12+08:00'
+date = '2025-01-23T13:00:00+08:00'
 draft = false
-title = 'My First Post'
+title = 'Tomcat淺談'
 +++
 
-This is **bold** text, and this is _emphasized_ text.
-
-Visit the [Hugo](https://gohugo.io) website!
+最近面試被問到會什麼server side的技術，
+對於只在開發端沒管理server經驗的我實在說不出個所以然，
+頂多在設定檔上加DB連線資訊，查看server編碼之類的，
+一直以來對server的理解都挺抽象的，
+於是花了些時間，
+弄清楚一個網頁應用軟體容器，如Tomcat，到底代工了哪些事情，
+我也還在懵懂摸索中，
+如果有說錯什麼在請各路大神聯繫我指教，感謝。
